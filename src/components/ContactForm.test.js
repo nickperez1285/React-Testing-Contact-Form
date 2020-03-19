@@ -30,3 +30,17 @@ test("form inputs are rendered within component ", () => {
   expect(message).toBeInTheDocument();
   
 });
+
+//  ReferenceError: getByLabelText is not defined
+// test("form inputs are accept proper values ", () => {
+//   const { getByText } = render(<ContactForm />);
+//     const firstName= getByText(/first name/i);
+//   const lastName =  getByText(/last name/i);
+//   const email = getByText(/email/i);
+//   const message = getByText(/message/i);
+
+//     fireEvent.change(getByLabelText(/first name/i), {target: { value: "test"}})
+//   fireEvent.change(lastName, { target: { value: "Testing2" } });
+//   fireEvent.change(email, { target: { value: "testing@test.com" } });
+  
+// });
